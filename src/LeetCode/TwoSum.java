@@ -1,9 +1,14 @@
+/*
+ * Test Result: 6.05%
+ */
+package LeetCode;
 
-public class Test {
+public class TwoSum {
+
 	public static void main(String[] args) {
 		int[] nums = {1,4,7};
 		int target = 11;
-		int[] result = new Test().twoSum(nums, target);
+		int[] result = new TwoSum().twoSum(nums, target);
 		System.out.println(""+result[0]+result[1]);
 	}
 	
@@ -22,5 +27,5 @@ public class Test {
         }
         return result;
     }
-}
 
+}
