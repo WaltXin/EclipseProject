@@ -3,8 +3,8 @@ package Codility;
 public class DecimalToBinaryGap {
 
 	public static void main(String[] args) {
-		System.out.println(new DecimalToBinaryGap().solution_a(1157));
-		System.out.println(new DecimalToBinaryGap().solution_b(1157));
+		System.out.println(new DecimalToBinaryGap().solution_a(1041));
+		System.out.println(new DecimalToBinaryGap().solution_b(1041));
 	}
 	
 	/*
@@ -62,18 +62,20 @@ public class DecimalToBinaryGap {
 				st += "1";
 			}
 		}
-		String resultValue = "";
+		int[] resultValue = {0,0,0};
+		int m = 0;
 		for(int i = st.length() - 1; i >= 0; i--)
-		{
+		{		
 			if (st.charAt(i) == '1')
 			{
-				resultValue += i;
+				resultValue[m] = i;
+				m++;
 			}
 		}
 		int gap = 0;
-		for (int i = 1; i < resultValue.length(); i++)
+		for (int i = 1; i < resultValue.length; i++)
 		{
-			int gapValue = (int)(resultValue.charAt(i - 1) - resultValue.charAt(i)) - 1; 
+			int gapValue = resultValue[i - 1] - resultValue[i] - 1; 
 			if (gapValue > gap)
 			{
 				gap = gapValue;
