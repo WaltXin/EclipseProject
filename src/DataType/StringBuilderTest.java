@@ -1,6 +1,6 @@
 package DataType;
 
-public class StringBufferTest {
+public class StringBuilderTest {
 
 	public static void main(String[] args) {
 		StringBuilder sBuilder = new StringBuilder("xyz");
@@ -33,13 +33,13 @@ public class StringBufferTest {
 		System.out.println(new StringBuilder().append("abc").reverse());
 		
 		//Performance
-		new StringBufferTest().Performance();
+		new StringBuilderTest().Performance();
 		
 		//CapacityPerformance
-		new StringBufferTest().CapacityPerformance();
+		new StringBuilderTest().CapacityPerformance();
 		
 		//StringOrCharPerformance
-		new StringBufferTest().StringCharPerformance();
+		new StringBuilderTest().StringCharPerformance();
 		
 	}
 	//Test String and StringBuilder's performance, StringBuilder is much more fast then String, 
