@@ -11,10 +11,10 @@ public class RemoveDuplicateFunction {
 		al.add("a");
 		al.add("a");
 		al.add("b");
-		System.out.println(new RemoveDuplicateFunction().ArrayListRemoveDuplicateByTwoIte(al));
+		System.out.println(new RemoveDuplicateFunction().CheckDuplicateExitByTwoForLoop(al));
 		System.out.println(new RemoveDuplicateFunction().CheckDuplicateExit(al));
 		al = new RemoveDuplicateFunction().ArrayListRemoveDuplicate(al);
-		System.out.println(new RemoveDuplicateFunction().ArrayListRemoveDuplicateByTwoIte(al));
+		System.out.println(new RemoveDuplicateFunction().CheckDuplicateExitByTwoForLoop(al));
 		System.out.println(new RemoveDuplicateFunction().CheckDuplicateExit(al));
 		System.out.println(al.toString());
 		al.add("a");
@@ -46,7 +46,7 @@ public class RemoveDuplicateFunction {
 		return arrayList;
 	}
 	
-	public boolean ArrayListRemoveDuplicateByTwoIte(ArrayList<String> al)
+	public boolean CheckDuplicateExitByTwoForLoop(ArrayList<String> al)
 	{
 		for (int i = 0; i < al.size(); i++)
 		{
