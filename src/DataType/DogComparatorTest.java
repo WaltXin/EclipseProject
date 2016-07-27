@@ -2,7 +2,7 @@ package DataType;
 
 import java.util.*;
 
-class Dog implements Comparator<Dog>, Comparable<Dog> {
+class Dog implements Comparator<Dog> {
 
 	private String dogName;
 	private int age;
@@ -37,11 +37,6 @@ class Dog implements Comparator<Dog>, Comparable<Dog> {
 	{
 		return age+"";
 	}
-	
-	public int compareTo(Dog dog)
-	{
-		return (this.dogName).compareTo(dog.dogName);
-	}
 
 	@Override
 	public int compare(Dog d, Dog d1) {
@@ -56,14 +51,13 @@ public class DogComparatorTest
 	{
 		Dog dog = new Dog();
 		dog.setName("Tom");
-		dog.setAge(1);
+		dog.setAge(3);
 		
 		Dog dog1 = new Dog("Jerry", 2);
 		List<Dog> dogList = new ArrayList<Dog>();
 		dogList.add(dog);
 		dogList.add(dog1);
-		System.out.println("Sorting ArrayList By Default(By first Letter)");
-		Collections.sort(dogList);
+		System.out.println("No Sort");
 		for (Dog d : dogList)
 		{
 			System.out.println(d.getName() + " " + d.getAge());
