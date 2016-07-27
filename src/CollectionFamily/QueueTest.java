@@ -26,7 +26,8 @@ public class QueueTest {
 		}
 		while(!pQueue.isEmpty())
 		{
-			System.out.println(pQueue.remove());
+			System.out.println(pQueue.poll());
+			Thread.sleep(500);
 		}
 	}
 
