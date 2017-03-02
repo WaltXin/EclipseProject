@@ -6,8 +6,8 @@ import java.util.List;
 public class DecimalToBinaryGap {
 
 	public static void main(String[] args) {
-		System.out.println(new DecimalToBinaryGap().solution_a(1041));
-		System.out.println(new DecimalToBinaryGap().solution_b(1041));
+		System.out.println(new DecimalToBinaryGap().solution_a(0));
+		System.out.println(new DecimalToBinaryGap().solution_b(1024));
 	}
 	
 	/*
@@ -32,6 +32,7 @@ public class DecimalToBinaryGap {
 			}
 			list.add(i);
 			N = (int) (N - Math.pow(2, i));
+			System.out.println(list);
 		}
 		int result = 0;
 		for (int i = 0; i < list.size() - 1; i++)
